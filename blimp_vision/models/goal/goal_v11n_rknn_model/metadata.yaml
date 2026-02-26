@@ -1,0 +1,22 @@
+description: Ultralytics YOLO11n model trained on datasets/goals/dataset.yaml
+author: Ultralytics
+date: '2025-02-06T23:13:04.685661'
+version: 8.3.69
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: yellow_circle
+  1: yellow_square
+  2: yellow_triangle
+  3: orange_circle
+  4: orange_square
+  5: orange_triangle
+args:
+  batch: 1
+  name: rk3588

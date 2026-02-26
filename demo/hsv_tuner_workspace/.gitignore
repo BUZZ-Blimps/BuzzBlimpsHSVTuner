@@ -1,0 +1,21 @@
+# Runtime caches
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.DS_Store
+**/*.log
+**/*.tmp
+
+# Generated tuning artifacts
+02_webui/exports/*.yaml
+02_webui/profiles/*.json
+02_webui/snapshots/*
+02_webui/uploads/*
+03_codex_docs/
+
+# Keep folders
+!02_webui/exports/.gitkeep
+!02_webui/profiles/.gitkeep
+!02_webui/snapshots/.gitkeep
+!02_webui/uploads/.gitkeep

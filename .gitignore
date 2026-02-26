@@ -1,0 +1,35 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs / temp
+*.log
+*.tmp
+
+# HSV tuner runtime artifacts
+demo/hsv_tuner_workspace/02_webui/exports/*.yaml
+demo/hsv_tuner_workspace/02_webui/profiles/*.json
+demo/hsv_tuner_workspace/02_webui/snapshots/*
+demo/hsv_tuner_workspace/02_webui/uploads/*
+demo/hsv_tuner_workspace/03_codex_docs/
+
+# Keep tracked placeholders
+!demo/hsv_tuner_workspace/02_webui/exports/.gitkeep
+!demo/hsv_tuner_workspace/02_webui/profiles/.gitkeep
+!demo/hsv_tuner_workspace/02_webui/snapshots/.gitkeep
+!demo/hsv_tuner_workspace/02_webui/uploads/.gitkeep

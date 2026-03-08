@@ -91,7 +91,6 @@ class VisionPipeline:
             det.side = side
 
         overlay = draw_detections(frame, detections)
-        overlay = self._draw_status(overlay, cfg, side)
 
         return PipelineResult(
             raw=frame.copy(),

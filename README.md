@@ -3,7 +3,7 @@ Web UI HSV tuning tool for BuzzBlimps vision pipelines.
 
 ![Demo UI](resources/demo.png)
 
-## Startup Guide (Linux / macOS)
+## Startup Guide (Linux / macOS) !!! Not required for Lab Computers
 Conda is recommended.
 
 ```bash
@@ -12,6 +12,17 @@ conda create -n HSVTuner python=3.11 -y
 conda activate HSVTuner
 
 python3 -m pip install -r requirements.txt
+python3 main.py --host 127.0.0.1 --port 8765
+```
+
+## For Lab Ubuntu 22 Jellyfish Computers
+No conda on Lab computers. You can use venv or just install to root. It is likely that the computers already have the required packages installed.
+
+```bash
+# Should have everything installed
+python3 -m pip install -r requirements.txt
+
+# Simply run script
 python3 main.py --host 127.0.0.1 --port 8765
 ```
 
@@ -33,3 +44,7 @@ python3 main.py
   - `demo/hsv_tuner_workspace/02_webui/exports`
 - Saved snapshots:
   - `demo/hsv_tuner_workspace/02_webui/snapshots`
+
+
+## Notes
+- Camera Selection is buggy right now. Please try index 02 through manual selection for USB camera. 
